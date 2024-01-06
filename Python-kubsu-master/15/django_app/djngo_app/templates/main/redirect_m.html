@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Рабочая страница</title>
+
+    </head>
+    <body>
+    {% if messages %}
+    <div class="horizontal-zone" style="justify-content: center;display: flex;">
+        {% for message in messages %}
+            {% if message.tags == "success" %}
+                <p class="success-message" style="width: 300px;height: 25px;padding-top: 3px;font-size: 15px;text-align: center;border-radius: 20px;background-color: green;">{{ message }}</p>
+            {% elif message.tags == "error" %}
+                <p class="error-message" style="width: 400px;height: 25px;padding-top: 3px;font-size: 15px;text-align: center;border-radius: 20px;background-color: red;">{{ message }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+        <div>
+            <form action="main_aud" method="POST">
+                {% csrf_token %}
+                {% autoescape off %}
+                <input type="hidden" name="table_name" value="{{ table_name }}">
+                <div class="horizontal-zone" style="margin-top: 50px;">
+                    {% for field in fields%}
+                    <div class="vertical-zone">
+                        {{ field }}
+                    </div>
+                    {% endfor %}
+                </div>
+                {{ button }}
+                {% endautoescape %}
+            </form>
+            <h3>Выбрали не ту таблицу или не то действие? <a href="http://127.0.0.1:8000/main/" style="color: orange;">Вернитесь</a></h3>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <title>Копибарочка - приют для животных</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+
+
+  <script defer src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script defer src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script defer src="https://unpkg.com/redux@4.0.5/dist/redux.js" crossorigin></script>
+  <script defer src="https://unpkg.com/react-redux@7.2.2/dist/react-redux.min.js" crossorigin></script>
+  <script defer src="https://unpkg.com/@reduxjs/toolkit@1.5.0/dist/redux-toolkit.umd.js" crossorigin></script>
+  <script defer src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script defer src="https://unpkg.com/formik@1.5.8/dist/formik.umd.production.js"></script>
+
+</head>
+
+<body>
+  <div class="navbar-absolute">
+    <div class="container-md">
+      <nav class="navbar navbar-expand-md">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="navigation-item">
+              <a class="nav-link" href="">ПОДДЕРЖКА ПРИЮТА</a>
+            </li>
+            <li class="navigation-item dropdown">
+              <a class="nav-link dropdown-toggle" href="">
+                ГЛАВНОЕ
+              </a>
+              <div class="dropdown-menu dropdown-menu-1">
+                <a class="dropdown-item" href="">ИЗМЕНЕНИЯ</a>
+                <a class="dropdown-item" href="">ЖИВОТНЫЕ</a>
+                <a class="dropdown-item" href="">ПРИЮТЫ</a>
+                <a class="dropdown-item" href="">ОПТИМИЗАЦИЯ СКОРОСТИ</a>
+                <a class="dropdown-item" href="">ПЕРЕЕЗД САЙТА</a>
+              </div>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="">ПРОДВИЖЕНИЕ</a>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="">РЕКЛАМА</a>
+            </li>
+            <li class="navigation-item dropdown">
+              <a class="nav-link dropdown-toggle" href="">О НАС</a>
+              <div class="dropdown-menu dropdown-menu-2">
+                <a class="dropdown-item" href="">КОМАНДА</a>
+                <a class="dropdown-item" href="">KOPIBARO4KALIVE</a>
+                <a class="dropdown-item" href="">БЛОГ</a>
+                <a class="dropdown-item" href="">СОВЕТЫ</a>
+              </div>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="">ПРОЕКТЫ</a>
+            </li>
+            <li class="navigation-item">
+              <a class="nav-link" href="">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </div>
+        <a class="navbar-brand" href="">
+          <img class="nav-icon" src="./img/drupal-coder.svg" alt="navigation" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+  <div id="main">
+    <div id="react-block"></div>
+    <header>
+      <div id="video-block">
+        <div id="video-filter"></div>
+        <video class="video-background"
+          src="https://joy1.videvo.net/videvo_files/video/free/2016-03/large_watermarked/gatos__preview.mp4" playsinline=""
+          autoplay="autoplay" loop="" preload="auto" muted="">
+        </video>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="bars-title">
+              Копибарочка - <br>приют для всех животных
+            </h1>
+            <div class="sub-title">
+              Помощь животным<br>
+              оказавшимся в трудной ситуации
+            </div>
+            <a href="#rates" class="rate-button">ПОМОЧЬ</a>
+          </div>
+          <div class="col-md-6">
+            <div class="row redline-text-blocks">
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">
+                    #1
+                    <img src="./img/cup.png" alt="#1" />
+                  </div>
+                  <div class="redline-text">
+                    Самый большой приют для животных <br> в России по версии <br> Андрея и Юры
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">3+</div>
+                  <div class="redline-text">
+                    средний опыт <br> специалистов более<br> 3 лет
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">100+</div>
+                  <div class="redline-text">
+                    животных в каждом приюте
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">50+</div>
+                  <div class="redline-text">
+                    приютов <br> по всей России
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">12</div>
+                  <div class="redline-text">
+                    приютов <br> в странах СНГ помимо России
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-4 col-6 redline-box">
+                <div class="redline">
+                  <div class="redline-title">3000</div>
+                  <div class="redline-text">
+                    Ровно столько мы покупаем <br> упаковок корма каждый год
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="competencies">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>
+              13 лет развиваем <br> и создаём новые <br> приюты!
+            </h2>
+            <div class="competencies-top-text">
+              Строим, расширяем, ремонтируем <br> подходящие здания, обновляем дизайн для уюта
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-1.svg" alt="Компетенция-1" />
+            </div>
+            <div class="text">
+              Отлов <br>  и помощь <br> бродячим животным
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-2.svg" alt="Компетенция-2" />
+            </div>
+            <div class="text">
+               Лечение <br> и реабилитация <br> больных животных
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-3.svg" alt="Компетенция-3" />
+            </div>
+            <div class="text">
+              Сотрудничество с  <br> ветеринарными <br> клиниками
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-4.svg" alt="Компетенция-4" />
+            </div>
+            <div class="text">
+              Лечение <br> ваших <br> животных
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-5.svg" alt="Компетенция-5" />
+            </div>
+            <div class="text">
+              Профессиональное <br> оборудование <br>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-6.svg" alt="Компетенция-6" />
+            </div>
+            <div class="text">
+              Перевоз <br> животных в  <br> комфортных условиях
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-7.svg" alt="Компетенция-7" />
+            </div>
+            <div class="text">
+              Еженедельный <br> обход <br> всех приютов специалистами
+            </div>
+          </div>
+          <div class="col-6 col-md-3 competency-unit">
+            <div class="competency-pic">
+              <img src="./img/competency-8.svg" alt="Компетенция-8" />
+            </div>
+            <div class="text">
+              Сбор  средст <br> нуждающимся  животным
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="support">
+      <h2>
+        Помощь <br> от Копибарочки
+      </h2>
+      <div class="container">
+        <div class="row mx-0">
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">01.</div>
+              <div class="support-title">Курирование животного</div>
+              <div class="text">
+                Вам небезразличен кто-то из жителей "Копибарочка"? Хотите принимать участие в его жизни? Вы можете стать куратором
+              </div>
+              <div class="support-icon">
+                <img src="./img/support1.svg" alt="Постановка задачи" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">02.</div>
+              <div class="support-title">Система Helpall – отчетность, прозрачность</div>
+              <div class="text">
+                Мы делимся в своих соцсетях всеми тратами, сделанными на ваши пожертвования
+              </div>
+              <div class="support-icon">
+                <img src="./img/support2.svg" alt="Система Helpdesk" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">03.</div>
+              <div class="support-title">Постоянное расширение</div>
+              <div class="text">
+                Каждый год открывается минимум 4 приюта!
+              </div>
+              <div class="support-icon">
+                <img src="./img/support3.svg" alt="Тех. поддержка" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">04.</div>
+              <div class="support-title">Только доброта</div>
+              <div class="text">
+                Наши сотрудники проходят очень тщательный отбор. Среди нас нет тех, кто не любил бы свою работу
+              </div>
+              <div class="support-icon">
+                <img src="./img/support4.svg" alt="Персональный менеджер проекта" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">05.</div>
+              <div class="support-title">Удобные способы оплаты</div>
+              <div class="text">
+                Наши сотрудники проходят очень тщательный отбор. Среди нас нет тех, кто не любил бы свою работу
+              </div>
+              <div class="support-icon">
+                <img src="./img/support5.svg" alt="Удобные способы оплаты" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">06.</div>
+              <div class="support-title">Работаем с другими приютами</div>
+              <div class="text">
+                Мы не конкурируем ни с кем. Наша цаль - добро
+              </div>
+              <div class="support-icon">
+                <img src="./img/support6.svg" alt="Работаем с SLA и NDA" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">07.</div>
+              <div class="support-title">Штатные специалисты</div>
+              <div class="text">
+                Надежные штатные специалисты, никаких доходяг.
+              </div>
+              <div class="support-icon">
+                <img src="./img/support7.svg" alt="Штатные специалисты" />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 support-item">
+            <div class="support-block">
+              <div class="support-digit">08.</div>
+              <div class="support-title">Удобные каналы связи</div>
+              <div class="text">
+                Консультации по телефону, скайпу, в месенджерах .
+              </div>
+              <div class="support-icon">
+                <img src="./img/support8.svg" alt="Удобные каналы связи" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="rates" id="rates">
+      <h2>
+        Стать героем
+      </h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 order-1 rate-col">
+            <div class="rate-unit">
+              <div class="rate-name">Добрый человек</div>
+              <ul>
+                <li>10 коробок корма </li>
+                <li>100 сытых животных каждый день</li>
+                <li>Неиспользованные коробки корма переносятся на следующий месяц</li>
+                <li>Оплата 1000 рублей в месяц</li>
+              </ul>
+              <button id="contact-button-1" class="contact-button">СВЯЖИТЕСЬ С НАМИ!</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 order-3 rate-col">
+            <div class="rate-unit">
+              <div class="rate-name">Звезда приюта</div>
+              <ul>
+                <li>10 коробок корма </li>
+                <li>100 сытых животных каждый день</li>
+                <li>Неиспользованные коробки корма переносятся на следующий месяц</li>
+                <li>Помощь в оплате труда сотрудникам</li>
+                <li>Подкорм уличных животных</li>
+                <li>Оплата 2000 рублей в месяц</li>
+              </ul>
+              <button id="contact-button-2" class="contact-button">СВЯЖИТЕСЬ С НАМИ!</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 order-2 rate-col main-rate">
+            <div class="rate-unit">
+              <div class="rate-name">Герой приютов</div>
+              <ul>
+                <li>10 коробок корма </li>
+                <li>100 сытых животных каждый день</li>
+                <li>Неиспользованные коробки корма переносятся на следующий месяц</li>
+                <li>Помощь в оплате труда сотрудникам</li>
+                <li>Подкорм уличных животных</li>
+                <li>Возможность лично курировать более 2 животных</li>
+                <li>Оплата 3000 рублей в месяц</li>
+              </ul>
+              <button id="contact-button-3" class="contact-button">СВЯЖИТЕСЬ С НАМИ!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="individual-rate">
+        Вам не подходят наши предложения? Оставьте заявку и мы <br> предложим вам индивидуальные условия!<br>
+        <a id="contact-button-4" class="call-form" href="">
+        </a>
+      </div>
+      
+<section class="quick-tasks">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 quick-tasks-title">
+              <h2>
+                Наши профессиональные разработчики <br> выполняют быстро любые задачи
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-4 competency-unit">
+              <div class="text">
+                <div class="competency-pic">
+                  <img src="./img/competency-20.svg" alt="Task-1" />
+                </div>
+                <div class="time">от 1ч</div>
+                <div>Прибытие на место<br>с раненым животным</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 competency-unit">
+              <div class="text">
+                <div class="competency-pic">
+                  <img src="./img/competency-21.svg" alt="Task-2" />
+                </div>
+                <div class="time">от 20ч</div>
+                <div>Проведение обследований<br>и принятие мер лечения</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 competency-unit">
+              <div class="text">
+                <div class="competency-pic">
+                  <img src="./img/competency-22.svg" alt="Task-3" />
+                </div>
+                <div class="time">от 10мин</div>
+                <div>Уделения времени <br> каждому животному в день</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="team">
+        <div class="container">
+          <div class="team-unit">
+            <div class="row">
+              <h2 class="col-12">
+                 Наши верные сотрудники
+              </h2>
+              <div class="col-6 col-sm-6 col-md-4 members-unit">
+                <div class="members-panel">
+                  <div class="members-picture">
+                    <img src="./img/1920x1200-px-animals-cats-1915029.jpg?itok=Fyg_7Erv" alt="Фото члена команды" width="280" height="280"
+                      class="pic-adaptive" />
+                  </div>
+                  <div class="members-name">Котёнок Гав</div>
+                  <div class="members-function">Руководитель отдела по съеденному корму</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-4 members-unit">
+                <div class="members-panel">
+                  <div class="members-picture">
+                    <img src="./img/1655207234_40-gas-kvas-com-p-koshka-foto-zhivotnogo-42.jpg?itok=UIjLIj5Z" alt="Фото члена команды" width="280" height="280"
+                      class="pic-adaptive" />
+                  </div>
+                  <div class="members-name">Мистер Мяу-Мяу</div>
+                  <div class="members-function">Заместитель руководителя по съеденному корму</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-4 members-unit">
+                <div class="members-panel">
+                  <div class="members-picture">
+                    <img src="./img/2560x1600_1359587_[www.ArtFile.ru].jpg?itok=wEUr4Wxc" alt="Фото члена команды" width="280" height="280"
+                      class="pic-adaptive" />
+                  </div>
+                  <div class="members-name">Щенок Мяу</div>
+                  <div class="members-function">Смотритель за съеденным кормом</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-4 members-unit">
+                <div class="members-panel">
+                  <div class="members-picture">
+                    <img src="./img/47f009e53a922f3995b1df21851d74d9.jpg?itok=R9PN9U4d" alt="Фото члена команды" width="280" height="280"
+                      class="pic-adaptive" />
+                  </div>
+                  <div class="members-name">Коржик и Бублик</div>
+                  <div class="members-function">Главные бандиты</div>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-md-4 members-unit">
+                <div class="members-panel">
+                  <div class="members-picture">
+                    <img src="./img/koshka_i_sobaka.jpg?itok=rH-9-ZmI" alt="Фото члена команды" width="280" height="280"
+                      class="pic-adaptive" />
+                  </div>
+                  <div class="members-name">Хаги и Ваги</div>
+                  <div class="members-function">Менеджеры по работе с клиентами</div>
+                </div>
+              </div>
+            </div>
+            <div class="all-team"><a href="">ВСЯ КОМАНДА</a></div>
+          </div>
+        </div>
+      </section>
+      <section class="container last-cases">
+        <h2>
+          Последние события
+        </h2>
+        <div class="last-cases-table">
+          <a class="case-block" href="">
+            <div class="case-pic" style="background-image: url(./img/78018_900.jpg)"></div>
+            <h3>
+             Создали в Краснодаре ещё 9 новых приютов!
+            </h3>
+            <div class="case-post-date">04.05.2020</div>
+            <div class="case-text">Наше влияние расширяется...
+            </div>
+          </a>
+          <a class="case-block fullscreen-case" href="">
+            <div class="case-pic" style="background-image: url(./img/kG1jV4Yi2Qo.jpg)"></div>
+            <h3>
+              Использование сторонней помощи в виде валонтёров привело к грандиозному успеху!
+            </h3>
+          </a>
+          <a class="case-block fullscreen-case" href="">
+            <div class="case-pic" style="background-image: url(./img/thUjZRcX_90.jpg)"></div>
+            <h3>
+              Открыли несколько новых способов улучшения качества жизни животных
+            </h3>
+            <div class="case-post-date">24.01.2020</div>
+          </a>
+          <a class="case-block fullscreen-case" href="">
+            <div class="case-pic" style="background-image: url(./img/EwBSliYS0z8.jpg)"></div>
+            <h3>
+              Ускороли время прибытия с помощью машин на водородной тяге на 90%
+            </h3>
+            <div class="case-post-date">23.09.2019</div>
+          </a>
+          <a class="case-block fullscreen-case" href="">
+            <div class="case-pic" style="background-image: url(./img/EwBSliYS0z8.jpg)"></div>
+            <h3>
+             Забрать животное теперь стало в разы проще!
+            </h3>
+            <div class="case-post-date">23.09.2019</div>
+          </a>
+        </div>
+      </section>
+      <section class="reviews-warapper">
+        <div class="container reviews">
+          <h2>
+             Отзывы
+          </h2>
+          <div class="reviews-shadow">
+            <div class="reviews-block">
+              <div class="reviews-slider">
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Прекрасное место где и правда помогают животным, видео что люди действительно очень трепетно и нежно относятся к своим подопечным, советую всем посетить данное место, там есть экскурсии на которых вы можете пообщаться с животными и поиграть с ними, принимается любая помощь , животные в хорошем состоянии
+                  </div>
+                  <div class="reviews-author">
+                    Марина Горобцова, неравнодушный опекун животного
+                    
+                  </div>
+                </div>
+                <div class="reviews-slide">
+              
+                  <div class="reviews-text">
+                    Каждому человеку, который завёл себе домашнего питомца надо знать это место. Здесь всегда помогут Вашему маленькому "члену" семьи. Работают хорошие специалисты, могут сделать и УЗИ, и операцию, и просто проконсультировать.
+                    А если Вы только захотели приобрести себе "братьев наших меньших", то конечно же приходите сюда. Здесь есть и котята и щенки, а также взрослые животные, которых оставили прежние хозяева в силу сложившихся жизненных обстоятельств.
+                  </div>
+                  <div class="reviews-author">
+                    Руслан Мельник, постоянный посетитель
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                 
+                  <div class="reviews-text">
+                    С приютом познакомились недавно. Возили кошку на стерилизацию, потом к грумеру (девочка действительно мастер!)
+Сотрудники там вообще все замечательные, профессионалы своего дела!
+Мы стараемся бывать там по возможности. Всегда есть что туда привезти: от ветоши до лекарств и корма животным. А в октябре ещё и кошечку взяли в приюте. Кстати, если вам действительно необходим питомец, хоть кошечки, хоть собачки,  очень рекомендую взять его из Краснодога. Как бы там за ними хорошо не ухаживали, а нуждаются питомцы именно в своём доме и в своих любящих хозяевах!
+Так что откройте своё сердце и двери дома для тех, кто в вас нуждается!
+                  </div>
+                  <div class="reviews-author">
+                    Евгения Золочевская, посетитель
+                    
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Здравствуйте. Я с детства занимаюсь собаками и очень их .люблю. сегодня 21.08 Международный день бездомных животных, Отмечается уже 29лет. Решил поинтересоваться, есть ли в нашем городе какой нибудь приют для таких животных и очень обрадовался что у нас есть добрые и милосердные люди которых волнует судьба беззащитных бездомных собак и кошек. Я прочитал много хороших отзывов овашей организации. Меня очень тронули добрые слова о вас. В первой главе Ветхого завета, говорится что Бог создал сначала животных, а потом человека и поручил ему заботится о них. Он создал диких и домашних животных. И если дикие умеют сами себя обеспечивать то домашние без нас просто не выживут. Им нужна наша забота. И это справедливо, ведь они приносят пользу людям и даже могут помочь в лечении некоторых болезней. Я понял что вы даже устраиваете экскурсии и даете возможность людям принять какое участие в их жизни или даже взять домой. Спасибо вам за заботу ибо как написано: "Праведный печется и о жизни скота своего, сердце же нечестивых жестоко."  Хочеся что бы таких людей было больше. Тогда по улицам не будут бегать стаи бездомных, грязных и больных собак и их не будут мучать и избивать злые люди. Интересно будет ли когда то такое время когда люди и все животные, даже дикие, будут жить в мире и согласии?
+                  </div>
+                  <div class="reviews-author">
+                    Евгений Андержанов, неравнодушный
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Отличный ветеринарный кабинет с приветливым и отзывчивым персоналом. Работают грамотно и аккуратно, есть возможность отправить результаты анализов на электронную почту. Дают хорошие рекомендации по уходу и не пытаются вам навязать лишних исследований для увеличения суммы чека.
+Однозначно, буду обращаться к ним еще не раз.
+                    Это действительно компания профессионалов.
+                  </div>
+                  <div class="reviews-author">
+                    Ангелина Туйчиева
+                   
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Приют хороший. И самое главное, что официальный со своим веткабинетом. Вы можете лично приехать, привести корм, лекарства, помочь погулять. За питомцами ухаживают очень хорошо, собачки все упитаные, шерсть хорошая, постоянно убирают вольеры. И везде все чистенько и аккуратно. Работа у персонала кипит. И персонала много. И ветеринарный кабинет хороший. И видно, что люди вкладывают много сил и времени. Другое дело, что бесконечно тяжело смотреть, как все они ждут хозяина в вольерах, как хотят чтобы на них обратили внимание. Приезжайте в приют - посмотрите, возможно в одной из клеток, ваш друг, которого Вы так долго хотели.
+                  </div>
+                  <div class="reviews-author">
+                    С уважением, Тимофей!
+                    
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Мы сегодня побывали на дне волонтёра. Поводили на поводке собак. Но моя любовь всё равно коты. Хочу отметить огромную заботу персонала о них. Такая самоотдача и трепетное отношение. А какая чистота, всё накормлены. Да, конечно не хватает им очень человеческого тепла и ласки. В этом они очень сильно нуждаются. И конечно хотят в семью. Это надо видеть эти глаза. У нас такой огромный город и наверное есть семьи, где дети хотят иметь пушистого друга. Почему бы этим животным не дать шанс...
+                  </div>
+                  <div class="reviews-author">
+                    Любовь Г.
+                    
+                  </div>
+                </div>
+                <div class="reviews-slide">
+                  
+                  <div class="reviews-text">
+                    Отличная клиника, хорошие врачи. Вожу туда своих 6 котов, цены очень приятные. Те, кто жалуются, что животных не берут, и ставят низкие оценки - не правы. Ибо приют берет только ПОСТРАДАВШИХ животных, которым требуется хирургия или лечение сложных инфекций. При мне девушки приносили новорожденного котенка, типа нашли, врач отказала в принятии в приют, совершенно обосновано, тк такие малыши в Краснодоге просто гибнут от инфекций. Так они его тупо бросили и убежали. Вот такие "ответственные" люди, лишь бы скинуть свои заботы на кого-то. Не можете спасти/оплатить/передержать/прокормить - пройдите мимо. А врачи отличные, проходили в Краснодоге УЗИ, делали стерилизацию трижды, один раз кастрировали кота, вырезали камень из мочевого - все операции проходили отлично! Один раз оставляли кошку в стационаре и вышло это совсем недорого. Всем советую!
+                  </div>
+                  <div class="reviews-author">
+                    Евгения Плавинская
+                  </div>
+                </div>
+              </div>
+              <div class="reviews-switch-block">
+                <button id="reviews-previous"></button>
+                <div class="reviews-display">
+                  <span id="reviews-number">01</span> / 08
+                </div>
+                <button id="reviews-next"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            
+      <section class="work-with-us">
+        <h2>С нами работают</h2>
+        <div class="work-with-us-title">
+           Десятки компаний доверяют нам самое ценное, что у них есть в интернете - своих <br> питомцев. Мы делаем всё, чтобы
+          их жизни было долгими
+        </div>
+        <div class="work-with-us-slider-1" id="wwu-slider-1" style="width: 100%">
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo_0.png" alt="Ciel" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/kubsu.png" alt="Kubsu" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/rosatom.png" alt="Росатом" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo_2.png" alt="Serebro.Ag" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo_0.png" alt="Ciel" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/kubsu.png" alt="Kubsu" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/rosatom.png" alt="Росатом" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo_2.png" alt="Serebro.Ag" /></div>
+          </div>
+        </div>
+        <div class="work-with-us-slider-2" id="wwu-slider-2" style="width: 100%">
+          <div class="work-with-us-slide">
+            <div><img src="./img/nashagazeta_ch.png" alt="Наша газета" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/cableman_ru.png" alt="Кабельщик" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo-estee.png" alt="Estee" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/lpcma_rus_v4.jpg" alt="Лаборатория" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/nashagazeta_ch.png" alt="Наша газета" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/cableman_ru.png" alt="Кабельщик" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/logo-estee.png" alt="Estee" /></div>
+          </div>
+          <div class="work-with-us-slide">
+            <div><img src="./img/lpcma_rus_v4.jpg" alt="Лаборатория" /></div>
+          </div>
+        </div>
+      </section>
+      <section class="container faq">
+        <h2>FAQ</h2>
+        <div class="faq-enum">
+          <div>
+            <h3>
+              <span class="faq-one">1.</span>Почему мы это делаем?
+            </h3>
+            <p>Никто не хотел бы что бы их родители выбросили их на улице в коробке. Мы имеем высокие моральные ценности, и не можем не переживать за тех, с кем так поступают каждый день. С животными. 
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">2.</span>Как организована наша работа?
+            </h3>
+            <p>Мы денно и ночно стараемся улучшить условия для наших маленьких пушистых ребят, и принимаем только самые обдуманные и правильные решения.
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">3.</span>Что происходит, когда вы отправляете нам деньги?
+            </h3>
+            <p>Они тратятся именно на то, что было обговоренно. Но во всех случаях есть общее - помощь животным.
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">4.</span>Что происходит, когда нам нехватает корма?
+            </h3>
+            <p>Такое происходит очень редко, но в таких случаях мы выделяем деньги из тех, которые вы пожертвовали, но они не былы потрачены
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">5.</span>Как вы можете забрать животное из нашего приюта?
+            </h3>
+            <p>Перед тем, как забрать животное, вы проходите тестирование. Если психолог подтверждает вашу пригодность, то животное отправится в вашу семью
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">6.</span>Сколько людей отвечает за один приют?
+            </h3>
+            <p>В каждой смене есть один главный ответственный, имеющий самый большой опыт в районе и образование ветеренара, несколько ветеренаров и 4 простых помошника.
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">7.</span>Кого мы ждём в гости?
+            </h3>
+            <p>Наш приют рад всем, кто готов оказать помощь животным.
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">8.</span>Что будет если я пожертвую большую сумму?
+            </h3>
+            <p>
+              Если человек уже курирует животное, то все оставшиеся деньги пойдут на экстренное лечение животных, которым это больше всего необходимо
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">9.</span>В течении какого времени начинается работа по заявке?
+            </h3>
+            <p>
+              Наша команда работает 24 часа в сутки без выходных, поэтому время отклика минимальное
+            </p>
+          </div>
+          <div>
+            <h3>
+              <span class="faq-one">10.</span>В какое время я могу приехать в приют?
+            </h3>
+            <p>
+              В любое время и любой день. Наши приюты работают круглосуточно и готовы оказать нужную помощь в любой момент
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer-block">
+        
+        <div class="container">
+          
+          <div id="footer-phrase">
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <div class="connect-wrapper">
+                  
+                  <div class="connect-title">Оставить заявку на <br> помощь </div>
+                  <div class="connect-description">Срочно нужна помощь?Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!
+                  </div>
+                  <div class="connect-contacts">
+                    <ul>
+                      <li class="contacts-phone"><a href="">8 800 222-26-73</a></li>
+                      <li class="contacts-email"><a href="">info@drupal-coder.ru</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-block">
+                  <form id="footer-form" action="https://formcarry.com/s/adu1AdDRs76" method="POST">
+                    <input name="name" id="footer-name" type="text" class="footer-block-input" placeholder="Ваше имя"
+                      required />
+                    <input name="number" id="footer-number" type="text" class="footer-block-input" placeholder="Телефон"
+                      required />
+                    <input name="email" id="footer-email" type="email" class="footer-block-input" placeholder="E-mail"
+                      required />
+                    <textarea name="message" id="footer-message" placeholder="Ваш комментарий"
+                      class="footer-block-input"></textarea>
+                    <label for="footer-policy" class="chb-block">
+                      <input name="footer-policy" type="checkbox" class="chb" id="footer-policy" />
+                      <span class="chb-place"></span>
+                      <span>
+                        <span class="footer-checkbox-text">Отправляя заявку, я даю согласие на
+                          <a href="">обработку своих персональных данных</a>.
+                        </span>
+                      </span>
+                    </label>
+
+                    <input id="sendButton" type="submit" class="footer-contact-button" value="СВЯЖИТЕСЬ С НАМИ"
+                      disabled />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="socialnetwork-block-wrapper">
+            <div class="socialnetwork-block">
+              <div class="footer-links-wrapper">
+                <ul class="footer-links">
+                  <li class="footer-pic facebook"><a href=""><img src="./img/facebook_icon.png" alt="Facebook" /></a>
+                  </li>
+                  <li class="footer-pic vkontakte"><a href=""><img src="./img/vk_icon.png" alt="VK" /></a></li>
+                  <li class="footer-pic telegram"><a href=""><img src="./img/telegram_icon.png" alt="Telegram" /></a>
+                  </li>
+                  <li class="footer-pic youtube"><a href=""><img src="./img/youtube_icon.png" alt="Youtube" /></a></li>
+                </ul>
+              </div>
+              <p>Проект ООО &#171; Копибарочка &#187;, г.Краснодар, Россия.
+                <br>
+                Копибарочка является оффициально зарегестрированным предприятием.
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>

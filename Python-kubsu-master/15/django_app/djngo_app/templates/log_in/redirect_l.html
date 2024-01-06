@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
+        <link rel="stylesheet" href="{% static 'css/su_li_pr.css' %}" />
+        <script src="{% static 'js/show_hide_password.js' %}" defer></script>
+        <title>Страница авторизации</title>
+=
+    </head>
+    <body>
+    {% if messages %}
+    <div>
+        {% for message in messages %}
+            <p style="width: 300px;height: 25px;padding-top: 3px;font-size: 15px;text-align: center;border-radius: 20px;background-color: green;">{{ message }}</p>
+        {% endfor %}
+    </div>
+    {% endif %}
+        <div class="cont">
+            <h3>Форма для авторизации</h3>
+            <div class="container"8>
+                <form action="../main" method="POST">
+                    {% csrf_token %}
+                    <p>Почта</p>
+                    <div class="pass-row">
+                        {% autoescape off %}
+                    {{ error_email }}
+                       
+                    </div>
+                    <p>Пароль</p>
+                    <div class="pass-row">
+                         {{ error_password }}
+                    {% endautoescape %}
+                        
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Авторизоваться</button>
+                    <h5>Ещё не зарегистрированы? <a href="http://127.0.0.1:8000/sign_up/" style="color: #FF4C2B;">Зарегистрируйтесь</a></h5>
+                </form>
+            </div>
+        </div>
+    <script>
+    </script>
+    </body>
+</html>

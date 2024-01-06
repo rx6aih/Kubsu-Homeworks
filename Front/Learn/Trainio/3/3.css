@@ -1,0 +1,16 @@
+.all
+{
+    font-family: sans;
+   
+    margin:5px -5px;
+}
+
+.gr
+{
+    font-size:0.9em;
+    color:green;
+}
+.sm
+{
+    font-size:0.1em;
+}

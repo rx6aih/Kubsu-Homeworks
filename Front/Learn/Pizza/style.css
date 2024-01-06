@@ -1,0 +1,88 @@
+h1,h2,h3,p
+{
+    text-align:center;
+}
+h1
+{
+font-size:40px;
+}
+
+h2
+{
+    font-family:cursive;
+    font-size:35px;
+}
+.head
+{
+    max-width:35%;
+    background-color:rgb(241, 62, 74);
+    margin-left:auto;
+    margin-right:auto;
+    color:rgb(255, 255, 255);
+}
+.menu
+{
+    max-width:30%;
+    width:500px;
+    background-color:rgb(255, 194, 73);
+    color:rgb(255, 255, 255);
+    margin-left:auto;
+    margin-right:auto;
+    padding-right:25px;
+    padding-left:25px;
+    font-size:17.5px;
+}
+body
+{
+    background-image:url(https://media.istockphoto.com/vectors/seamless-pepperoni-pizza-pattern-vector-id859139348?k=20&m=859139348&s=612x612&w=0&h=FCBbBnx0lk-p2LIXCBwDJq-IsleKsrGEJuYq84XC3B0=);
+    font-family:sans-serif;
+    padding:20px;
+}
+.red
+{
+    color:rgb(255, 85, 52);
+    padding-bottom:30px;
+}
+hr
+{
+    height:4px;
+    width:400px;
+    border-width:2px;
+    background-color: rgb(255, 255, 255);
+    border-color:rgb(255, 2, 2);
+}
+.item p
+{
+    display:inline-block;
+}
+.pz
+{
+    text-align:left;
+    width:75%;
+}
+.price
+{
+    text-align:right;
+    width:25%;
+}
+.hline
+{
+    margin-top:30px;
+    margin-bottom:10px;
+    
+}
+.ccs
+{
+    margin:30px auto;
+    width:800px;
+    padding:10px 30px;
+    background-color:rgb(255, 194, 73);
+    color:white;
+}
+.footer
+{
+    background-color:rgba(255, 194, 73, 0.444);
+    height: 20px;
+    text-align: left;
+    color:red;
+}

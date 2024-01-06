@@ -1,0 +1,128 @@
+        html{
+            scroll-behavior: smooth;
+        }
+        .head
+        {
+            max-width:100%;
+            background-color:rgb(147, 141, 177);
+            margin-left:auto;
+            margin-right:auto;
+            color:rgb(255, 255, 255);
+            text-align:center;
+            width:100%;
+            height:130px;
+            
+        }
+
+        body
+        {
+            font-family:sans-serif;
+            max-width:100%;
+            margin:0;
+            color:rgb(90, 90, 90);
+            text-align:center;
+            background-color:rgb(64, 57, 102);
+            font-size:1.2rem;
+        }
+        a:visited
+        {color:rgb(255,94,142)}
+        .gol
+        {
+            text-align:center;
+            max-width:800px;
+            background-color:rgb(255, 94, 142);
+            margin:0 auto;
+            margin-bottom:0px;
+            padding:10px;
+            box-shadow:10px 10px 10px 0 rgb(255, 183, 183);
+            margin-top:-10px;
+        }
+        .flex-box
+        {
+            margin-top:20px;
+        }
+        .mainl
+        {
+            text-align:center;
+            width: 550px;
+            
+            background-color:rgb(80, 71, 128);
+            margin-left:600px;
+            padding:50px;
+            border-bottom:10px;
+
+        }
+        .links
+        {
+            background-color:rgb(80, 71, 128);
+            width:100%;
+            text-align:center;
+            padding-right:0;
+            margin-right:0px;
+            padding-top:10px;
+            margin-left:0px;
+            max-width:100%;
+            color:whitesmoke;   
+        }
+
+        li,ol{
+            margin-left:10px;
+            margin-right:0px;
+
+        }
+        table
+        {
+            margin-left:800px;
+            
+        }
+        .chet
+        {
+            background-color:rgb(114, 111, 111);
+        }
+        .nech
+        {
+            background-color: rgb(116, 120, 120);
+        }
+        #main-aside-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        #main-aside-wrapper main, #main-aside-wrapper aside {
+        background-color: rgb(80, 71, 128);
+        color:aliceblue;
+        }
+        #main-aside-wrapper aside {
+        flex: 1;
+        order: 1;
+        background-color:rgb(43, 39, 58);
+        margin-left:0;
+        text-align:center;
+        font-family:Impact, 'Arial Narrow Bold', sans-serif;
+        margin-top:1000px;
+        }
+        #main-aside-wrapper main {
+        flex: 3;
+        order: 2;
+        padding-right:385px;
+        margin-left:10px;
+        margin-right:10px;
+        }
+        @media screen and (min-width: 800px) {
+        #main-aside-wrapper {
+        flex-direction: row;
+        }
+        }
+        .footer
+        {
+            margin-top:100px;
+            color:white;
+            background-color:rgb(89, 81, 132)
+        }
+        .form
+        {
+            margin-top:10px;
+            text-align: left;
+            padding-left:200px;
+        }
+        .c1{order:1}
+        .c2{order:2}

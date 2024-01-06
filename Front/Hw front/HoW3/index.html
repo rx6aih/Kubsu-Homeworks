@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Hw3</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="container">
+      
+        <b id="bheader"> Header </b>
+      </div>
+    </div>
+  </header>
+
+  <div class="container" id="main">
+    <ol>
+      <div class="li">
+        <div class="navlink"><a href="#top" title="Начало"> Начало страницы </a></div>
+        <div class="navlink"><a href="#hyperlinks" title="Списко гиперрсылок"> Список гиперссылок </a></div>
+        <div class="navlink"><a href="#table" title="Таблица">Таблица</a></div>
+        <div class="navlink"><a href="#form" title="Форма"> Форма </a></div>
+        <div class="navlink"><a href="#end" title="Конец страницы"> Конец страницы</a></div>
+      </div>
+    </ol>
+    
+    <div class="hyperlinks">
+      <h3 id="hyperlinks">Список гиперссылок</h3>
+      <ol>
+        <li>
+          <a href="http://kubsu.ru">Абсолютная гиперссылка на главную страницу сайта КубГУ</a>
+        </li>
+    
+        <li>
+          <a href="https://kubsu.ru/">Абсолютная гиперссылка на главную страницу сайта КубГУ в протоколе https</a>
+        </li>
+    
+        <li>
+          <a href="ftp://Temp/file.txt"> Ссылка FTP без авторизации </a>
+        </li>
+    
+        <li>
+          <a href="ftp://RedAlex50:pass123@tavalik.ru/Temp/file.txt"> Ссылка FTP с авторизацией </a>
+        </li>
+    
+        <li>
+    
+          <a href="https://webref.ru/layout/html5-css3/link/anchor#views-similar-block">
+            Ссылка на фрагмент страницы некоторого сайта:
+          </a>
+        </li>
+    
+        <li> <!-- Ссылка на форму в конце страницы -->
+    
+          <a href="#form"> Ссылка на фрагмент текущей страницы:  </a>
+        </li>
+        <li>
+          <a href=" http://example.com?user=redalex50&pass=qwerty123"> Ссылка с двумя параметрами в URL </a>
+        </li>
+    
+    
+        <!-- список ссылок основной навигации сайта с подписями title-->
+        <li>
+          <a> Ссылка без href</a>
+        </li>
+        <li>
+          <a href=""> Ссылка с пустым href </a>
+        </li>
+        <li>
+          <a href="http://kubsu.ru/" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a>
+        </li>
+        <li>
+          <!-- noindex --> <a href="http://kubsu.ru/">Ссылка, запрещенная для индексации поисковиками </a><!--/noindex -->
+        </li>
+        <li>
+          <p>
+            Контекстная <a href="http://kubsu.ru/">  ссылка  </a> в тексте абзаца
+          </p>
+        </li>
+        <li>
+          Ссылка-изображение:
+          <li> <a href="https://dodopizza.ru/krasnodar"title="Пицца"><img src="https://a4pizza.ru/assets/components/phpthumbof/cache/x-,PD0,PB8-,PD1,P86,PD1,P8B,PD0,PBF,PD0,PBB,PD0,PB5,PD0,PBD,PD0,PBE,PD0,PBA-1.0795516fcc731712f1f78148ef9130d3.jpg.pagespeed.ic.lLwRBPTbny.jpg"width ="410"height="242"> </a></li>
+          <li> <a href="example.com"title="Шаурма"><img src = "https://kurkumashaurma.by/assets/images/products/138/tureczkaya-1200-dsc-5911.jpg"idth="310" height="242" alt="Описание картинки" usemap="#mymap">
+            <map name="mymap">
+                <area shape="rect" href="https://ru.wikipedia.org/wiki/Курица" coords="100,25,230,250"alt="курица">
+                <area shape="rect" href="https://ru.wikipedia.org/wiki/Лаваш" coords="00,25,90,150"alt="лаваш">
+            </map>
+          </p>
+    
+        </li>
+        <li>
+          <a href="1.html">Относительная ссылка на страницу в текущем каталоге</a>
+        </li>
+    
+        <li>
+          <a href="about/2.html"> Относительная ссылка на страницу в каталоге about</a>
+        </li>
+        <li>
+          <a href="../3.html"> Относительная ссылка на страницу в каталоге уровнем выше текущего </a>
+        </li>
+        <li>
+          <a href="../../4.html"> Относительная ссылка на страницу в каталоге двумя уровнями выше </a>
+        </li>
+        <li>
+          <a href="https://clck.ru/yniry"> Сокращенная ссылка на главную </a>
+        </li>
+    
+        <li>
+          <a href="https://clck.ru/ynjbJ"> Сокращенная ссылка на внутреннюю </a>
+        </li>
+      </ol>
+    </div>
+    <hr>
+    <div class="table">
+      <h3 id="table">Таблица:</h3>
+      <table>
+        <tr>
+          <th class="nech">Button 1 1</th>
+          <th class="chet">Button 1 2</th>
+          <th class="nech">Button 1 3</th>
+      </tr>
+      <tr>
+          <th class="nech">Button 2 1</th>
+          <th class="chet">Button 2 2</th>
+          <th class="nech">Button 2 3</th>
+      </tr>
+      <tr class="tab">
+          <td class="nech" colspan="2">Button 3 1
+          Button 3 2</th>
+          <th class="nech">Button 3 3</th>
+      </tr>
+      <tr>
+          <th class="nech">Button 4 1</th>
+          <th class="chet">Button 4 2</th>
+          <th class="nech">Button 4 3</th>
+      </tr>
+      <tr>
+          <th class="nech">Button 5 1</th>
+          <th class="chet">Button 5 2</th>
+          <th class="nech">Button 5 3</th>
+      </tr>
+      </table>
+    </div>
+    <hr>  
+    <div class="form">
+      <h3 id="form"> Форма: </h3>
+      <form action="reply.html" method="POST">
+        <label>
+          Имя:<br>
+          <input name="field-name" placeholder="ФИО">
+        </label><br>
+      
+        <label>
+          Email:<br>
+          <input name="field-email" type="email" placeholder="Введите вашу почту">
+        </label><br>
+      
+        <label>
+          Дата рождения:<br>
+          <input name="field-date" type="date">
+        </label><br>
+        
+        Пол:<br>
+        <label><input type="radio" name="radio-group-gender" value="input-gender-male">
+          Мужской
+        </label>
+        <label><input type="radio" name="radio-group-gender" value="input-gender-female">
+          Женский
+        </label><br>
+      
+        Кол-во конечностей:<br>
+        <label><input type="radio" name="radio-group-limbs" value="input-limbs-1">
+        1
+        </label>
+        <label><input type="radio" name="radio-group-limbs" value="input-limbs-2">
+        2
+        </label>
+        <label><input type="radio" name="radio-group-limbs" value="input-limbs-3">
+          3
+        </label>
+        <label><input type="radio" name="radio-group-limbs" value="input-limbs-4">
+          меньше 1
+        </label>
+        <label><input type="radio" name="radio-group-limbs" value="input-limbs-X">
+          больше 4
+        </label><br>
+      
+        <label>
+          Сверхспособности:
+          <br>
+          <select name="field-spower" multiple="multiple">
+            <option value="spower-immortality">Бессметрие</option>
+            <option value="spower-no-walls">Прохождение сквозь стены</option>
+            <option value="spower-levitation">Левитация</option>
+          </select>
+        </label><br>
+      
+        <label>
+          Биография:<br>
+          <textarea name="field-biography" placeholder="Минимум 100 слов"></textarea>
+        </label><br>      
+      
+        <label><input type="checkbox" name="contract-checked">
+          С условиями ознакомлен (а)</label><br>
+      
+        <input type="submit" value="Отправить">
+      </form>
+    </div>
+    <hr>
+  </div>
+
+  <footer>
+    <div class="footer">
+      <div class="container">
+        <h2 id="end">
+         Фролкин Юрий 24/2
+        </h2>
+        
+      </div>
+    </div>
+  </footer>
+  
+</body>
+</html>

@@ -1,0 +1,9 @@
+.boxi
+{
+    background-color: bisque;
+    text-align:center;
+    margin:auto;
+    width:100px;
+    height: 100px;
+    box-shadow:inset 0 0 20px 0 rgb(0,0,0);
+}

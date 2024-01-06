@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+ <head>
+    <meta charset="UTF-8">
+     
+     <title>
+         Сосиска
+     </title>
+ </head>
+    
+    <body>
+        <div id ="main-aside-wrapper">
+        <main>
+     Список ссылок - <br>
+     <a href="example.com/"title ="example.com">Абсолютная гиперссылка на главную страницу сайта example.com;(Ссылка №1)</a><br>
+     <a href="https://example.com/"title = "example.com">Абсолютная на главную сайта example.com в протоколе https(Ссылка №2) </a><br>
+     <a href="ftp://example.com/Temp/file.txt"title="examlpe.com/txt">Ссылка на файл на сервере FTP без авторизации(Ссылка №3)</a><br>
+     <a href="ftp://example.com/Temp/file.txt//s0160180:pass228@mail.ru"title="example.com/file.txt/login">Ссылка на файл с авторизацией на сервере FTP(Ссылка №4)</a><br>
+     <a href="https://vk.com/saintsrx#:~:text=%D0%94%D0%B8%D0%BA%D0%BE%D0%B7%20%D0%BE%D1%82%D0%B4%D1%8B%D1%85%D0%B0%D0%B5%D1%82%20%D1%83%20%D1%82%D0%B5%D0%B1%D1%8F%20%D0%BD%D0%B0%20%D1%81%D1%82%D0%B5%D0%BD%D0%B5"title="vk.com">Ссылка на фрагмент сайта(Ссылка №5)</a><br>
+     <a href="http://127.0.0.1:5500/index.html#:~:text=%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%D0%BD%D0%B0%20%D1%84%D1%80%D0%B0%D0%B3%D0%BC%D0%B5%D0%BD%D1%82%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0(%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%E2%84%965)"title="current page">Ссылка на фрагмент текущей страницы(Ссылка №6)</a><br>
+     <a href="http://example.com?product=1234&utm_source=google"title="example.com">Ссылка с двумя параметрами в URL(Ссылка №7)  </a><br>
+     <h2>Список ссылок основной навигации сайта с подписями title</h2><br>
+    <ul>
+        <li><a href="http://127.0.0.1:5500/index.html#:~:text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D1%81%D1%81%D1%8B%D0%BB%D0%BE%D0%BA%20%2D,-%D0%90%D0%B1%D1%81%D0%BE%D0%BB%D1%8E%D1%82%D0%BD%D0%B0%D1%8F%20%D0%B3%D0%B8%D0%BF%D0%B5%D1%80%D1%81%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%D0%BD%D0%B0" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+        <li><a href="http://127.0.0.1:5500/index.html#:~:text=%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D1%8E%D1%8E(%D0%A1%D1%81%D1%8B%D0%BB%D0%BA%D0%B0%20%E2%84%9622)-,%D0%A4%D0%BE%D1%80%D0%BC%D0%B0%20%D0%B7%D0%B0%D0%BF%D0%B8%D1%81%D0%B8%20%3A,-%D0%98%D0%BC%D1%8F%3A" title="Форма">Форма</a></li>
+    </ul>
+    <a = "example.com" title = "example.com">Ссылка без href(Ссылка №9)</a><br>
+    <a href = ""title="empty">Пустой href(Ссылка №10)</a><br>
+    <a href="https://example.com/" rel="nofollow"title="example.com">Ссылка, по которой запрещен переход поисковикам(Ссылка №11)</a><br>
+    <a href="https://example.com/"><noindex>Ссылка без индексации(Ссылка №12)</noindex></a><br>
+    <li><p>Контекстная <a href="example.com/"> ссылка </a>в тексте абзаца(Ссылка №13)</p><br></li></p>
+    <a href="https://dodopizza.ru/krasnodar"title="Пицца"><img src="https://st2.depositphotos.com/1692343/5636/i/600/depositphotos_56360353-stock-photo-hot-homemade-pepperoni-pizza.jpg"> </a><br>
+    <img src = "https://kurkumashaurma.by/assets/images/products/138/tureczkaya-1200-dsc-5911.jpg"idth="310" height="242" alt="Описание картинки" usemap="#mymap">
+    <map name="mymap">
+        <area shape="rect" href="https://ru.wikipedia.org/wiki/Курица" coords="100,25,230,250"alt="курица">
+        <area shape="rect" href="https://ru.wikipedia.org/wiki/Лаваш" coords="00,25,90,150"alt="лаваш">
+    </map>
+    <br>
+    <a href=”about”>О компании(Ссылка №16)</a><br>
+
+<a href="page">Относительная ссылка на страницу в текущем каталоге(Ссылка №17)</a><br>
+<a href="./about/page">Относительная ссылка на страницу в каталоге about(Ссылка №18)</a><br>
+<a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего(Ссылка№19)</a><br>
+<a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего(Ссылка №20)</a><br>
+<a href="/">Сокращенная ссылка на главную(Ссылка №21)</a><br>
+<a href="/pages/page">Сокращенная ссылка на внутреннюю(Ссылка №22)</a><br>
+   Форма записи :
+<form action="example.com/"method="POST">
+<label>
+    Имя:<input name="field-name-1"
+    value="kitty"/>
+</label><br>
+</action>
+<label>
+    email:<input required name="field-email"
+    value="kitty@mail.ru"
+    type="email"/>
+</label><br>
+
+<label>
+Дата:<input required name="field-date"
+value="2022-09-11"
+type="date"/>
+</label><br>
+
+<label>Пол:
+    <input type="radio" checked="checked"
+    name="radio-group-1"value="Значение1" />Мужской</label>
+<label>
+    <input type="radio"name="radio-group-1"value="Значение2" />Женский</label><br />
+Количество конечностей: 
+    <label>
+        <input type="radio" checked="checked"name="radio-group-2"value="Значение1" />Одна рука</label>
+    <label>
+        <input type="radio"name="radio-group-2"value="Значение2" />Две рукий</label>
+    <label>
+        <input type="radio"name="radi-group-2"value="Значение3" />Больше двух рук</label><br />
+ <br>
+ <label>
+    Сверхспособность:
+     <select name="field-name-3">
+         <option value = "1">Молчать</option>
+         <option value = "2">Антон</option>
+         <option value = "3">Наличие девушки</option>
+         </select>
+ </label><br/>
+ 
+
+<label>Биография:<br/>
+    <textarea name="field-name-2">heehe</textarea>
+    </label><br/>
+    
+    <br />
+
+</div>
+<label><input type="checkbox" checked="checked"
+name="check-1" />
+Готок в труду!</label><br />
+<input type="submit" value="Отправить" />
+
+</form>
+    </body> 
+</html>

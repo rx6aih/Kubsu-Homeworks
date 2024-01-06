@@ -1,0 +1,12 @@
+.bg-blue {
+    background-color: rgb(240, 240, 240);
+}
+body
+{
+    background-color: rgba(136, 165, 177, 0.514);
+    background-image: url(https://img2.goodfon.ru/original/1920x1080/e/2c/novyy-god-happy-new-year-1853.jpg);
+}
+footer
+{
+    margin-top:500px;
+}
